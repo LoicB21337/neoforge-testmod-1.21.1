@@ -2,12 +2,33 @@
     "item.testmod.bismuth": "Bismuth",
     "item.testmod.raw_bismuth": "Raw Bismuth",
     "item.testmod.chisel": "Chisel",
+    "item.testmod.radish": "Radish",
+    "item.testmod.frostfire_ice": "Frostfire Ice",
+    "item.testmod.starlight_ashes": "Starlight Ashes",
 
     "block.testmod.bismuth_block": "Bismuth Block",
     "block.testmod.bismuth_ore": "Bismuth Ore",
     "block.testmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
     "block.testmod.magic_block": "Magic Block",
 
-    "creativetab.testmod.bismuth_items": "Bismuth Items",
-    "creativetab.testmod.bismuth_blocks": "Bismuth Blocks"
+  "block.testmod.bismuth_stairs": "Bismuth Stairs",
+  "block.testmod.bismuth_slab": "Bismuth Slab",
+
+  "block.testmod.bismuth_button": "Bismuth Button",
+  "block.testmod.bismuth_pressure_plate": "Bismuth Pressure Plate",
+
+  "block.testmod.bismuth_fence": "Bismuth Fence",
+  "block.testmod.bismuth_fence_gate": "Bismuth Fence Gate",
+  "block.testmod.bismuth_wall": "Bismuth Wall",
+
+  "block.testmod.bismuth_door": "Bismuth Door",
+  "block.testmod.bismuth_trapdoor": "Bismuth Trapdoor",
+
+  "creativetab.testmod.bismuth_items": "Bismuth Items",
+  "creativetab.testmod.bismuth_blocks": "Bismuth Blocks",
+
+  "tooltip.testmod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
+  "tooltip.testmod.chisel.shift_down": "This item can chisel Blocks into Bricks",
+  "tooltip.testmod.chisel": "Press §eShift§r for more Information",
+  "tooltip.testmod.radish.tooltip": "Taste great"
 }
