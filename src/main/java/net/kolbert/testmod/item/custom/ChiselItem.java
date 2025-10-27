@@ -1,6 +1,7 @@
 package net.kolbert.testmod.item.custom;
 
 import net.kolbert.testmod.block.ModBlocks;
+import net.kolbert.testmod.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -47,6 +48,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null , context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -56,10 +59,15 @@ public class ChiselItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         if(Screen.hasShiftDown()) {
-            tooltipComponents.add(Component.translatable("tooltip.testmod.chisel.shift_down"));
+            tooltipComponents.add(Component.translatable("tooltip.kolbert.testmod.chisel.tooltip"));
         }else{
             tooltipComponents.add(Component.translatable("tooltip.testmod.chisel"));
         }
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            BlockPos pos = ((BlockPos)stack.get(ModDataComponents.COORDINATES));
+            tooltipComponents.add(Component.translatable("tooltip.testmod.chisel.coordinates", "x:" + pos.getX() + ", y:" + pos.getY() + ", z:" + pos.getZ()));
+        }
+
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

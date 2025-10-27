@@ -1,6 +1,7 @@
 package net.kolbert.testmod;
 
 import net.kolbert.testmod.block.ModBlocks;
+import net.kolbert.testmod.component.ModDataComponents;
 import net.kolbert.testmod.item.ModCreativeModeTabs;
 import net.kolbert.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,6 +42,8 @@ public class TestMod {
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

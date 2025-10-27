@@ -1,6 +1,7 @@
 package net.kolbert.testmod.block;
 
 import net.kolbert.testmod.TestMod;
+import net.kolbert.testmod.block.custom.BismuthLampBlock;
 import net.kolbert.testmod.block.custom.MagicBlock;
 import net.kolbert.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -52,6 +54,9 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAPDOOR = registerBlock("bismuth_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()
+                    .lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

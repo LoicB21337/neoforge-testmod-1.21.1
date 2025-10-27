@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -29,5 +30,16 @@ public class ModItemTagProvider extends ItemTagsProvider
                 .add(Items.STICK)
                 .add(Items.COMPASS)
                 .add(Items.COAL);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.BISMUTH_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.BISMUTH_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.BISMUTH_AXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.BISMUTH_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.BISMUTH_HOE.get());
     }
 }

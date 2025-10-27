@@ -1,6 +1,7 @@
-// 1.21.1	2025-10-14T17:44:52.0524478	Tags for minecraft:block mod id testmod
+// 1.21.1	2025-10-27T15:20:20.7174895	Tags for minecraft:block mod id testmod
 a16f4b9c07c901c5f32f2af9d6ca6d61dce79861 data/minecraft/tags/block/fences.json
 37806d45854e7afc3357354c32b50bce8399e25e data/minecraft/tags/block/fence_gates.json
 7f4ce9fbb9e00bc087a46854180a3ef7e8f05498 data/minecraft/tags/block/mineable/pickaxe.json
 bfca744b57707fc5521c90bf147e2ce97cc369db data/minecraft/tags/block/needs_iron_tool.json
 f6bd5885e022182d4cb8825b37d43322cbd3b185 data/minecraft/tags/block/walls.json
+c4073882b3cb166a25bcf433b8ef567e71c72d8b data/testmod/tags/block/needs_bismuth_tool.json

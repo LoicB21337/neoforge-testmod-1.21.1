@@ -6,6 +6,12 @@
     "item.testmod.frostfire_ice": "Frostfire Ice",
     "item.testmod.starlight_ashes": "Starlight Ashes",
 
+    "item.testmod.bismuth_sword" : "Bismuth Sword",
+    "item.testmod.bismuth_pickaxe" : "Bismuth Pickaxe",
+    "item.testmod.bismuth_shovel" : "Bismuth Shovel",
+    "item.testmod.bismuth_axe" : "Bismuth Axe",
+    "item.testmod.bismuth_hoe" : "Bismuth Hoe",
+
     "block.testmod.bismuth_block": "Bismuth Block",
     "block.testmod.bismuth_ore": "Bismuth Ore",
     "block.testmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
@@ -24,11 +30,15 @@
   "block.testmod.bismuth_door": "Bismuth Door",
   "block.testmod.bismuth_trapdoor": "Bismuth Trapdoor",
 
+  "block.testmod.bismuth_lamp": "Bismuth Lamp",
+
   "creativetab.testmod.bismuth_items": "Bismuth Items",
   "creativetab.testmod.bismuth_blocks": "Bismuth Blocks",
 
   "tooltip.testmod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
   "tooltip.testmod.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "tooltip.testmod.chisel": "Press §eShift§r for more Information",
-  "tooltip.testmod.radish.tooltip": "Taste great"
+  "tooltip.testmod.radish.tooltip": "Taste great",
+  "tooltip.testmod.chisel.coordinates": "Last changed block : %s",
+  "tooltip.kolbert.testmod.chisel.tooltip": "This item can chisel blocks into bricks"
 }
